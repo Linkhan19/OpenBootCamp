@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import TaskListComponent from "./Components/Container/task.list";
+import CompoA from "./Components/cA";
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='grid place-items-center text-center'>
+        <div className="">
+          <TaskListComponent/>
+        </div>
+        <div className="pt-6">
+          <div className="box-border border-solid border-black border-2 m-6 p-6 rounded-lg">
+            <CompoA/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
